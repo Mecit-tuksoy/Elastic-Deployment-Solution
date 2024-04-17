@@ -3025,7 +3025,7 @@ git checkout feature/msp-23
 
 * Create a security group for External Application Load Balancer of Rancher with name of `petclinic-rke-alb-sg` and allow HTTP (Port 80) and HTTPS (Port 443) connections from anywhere.
   
-* Create a security group for RKE Kubernetes Cluster with name of `petclinic-rke-cluster-sg` and define following inbound and outbound rules.
+* Create a security group for RKE Kubernetes Cluster with name of ` ` and define following inbound and outbound rules.
 
   * ``Inbound`` rules;
 
@@ -3043,7 +3043,7 @@ git checkout feature/msp-23
 
     * Allow HTTP protocol (TCP on port 80) to all IP for getting updates.
     
-    * Allow HTTPS protocol (TCP on port 443) to `35.160.43.145/32`, `35.167.242.46/32`, `52.33.59.17/32` for catalogs of `git.rancher.io`.
+    * Allow HTTPS protocol (TCP on port 443) to `35.160.43.145/32`, `35.167.242.46/32`, ` ` for catalogs of `git.rancher.io`.
 
     * Allow TCP on port 2376 to any node IP from a node created using Node Driver for Docker machine TLS port.
 
@@ -3111,7 +3111,7 @@ Interval            : 10 seoconds
 Success             : 200
 ```
 
-* Create Application Load Balancer with name of `petclinic-rancher-alb` using `petclinic-rke-alb-sg` security group with following settings and add `petclinic-rancher-http-80-tg` target group to it.
+* Create Application Load Balancer with name of ` ` using `petclinic-rke-alb-sg` security group with following settings and add `petclinic-rancher-http-80-tg` target group to it.
 
 ```yml
 Scheme              : internet-facing
