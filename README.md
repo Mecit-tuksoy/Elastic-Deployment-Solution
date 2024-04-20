@@ -3080,8 +3080,8 @@ sudo apt-get update
 
 # RKE is not compatible with the current Docker version (v25 hence we need to install an earlier version of Docker)
 # List the available versions:
-
-apt-cache madison docker-ce | awk '{ print $3 }'
+apt-cache madison docker-ce | awk '{ print $3 }
+'
 
 # Install and start Docker
 sudo apt-get install docker-ce=5:20.10.24~3-0~ubuntu-jammy  docker-ce-cli=5:20.10.24~3-0~ubuntu-jammy containerd.io docker-buildx-plugin docker-compose-plugin
